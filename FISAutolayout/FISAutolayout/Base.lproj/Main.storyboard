@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nu-nq-XFG">
+                                <rect key="frame" x="20" y="686" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmS-JM-d1l">
+                                <rect key="frame" x="348" y="686" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Qv-yR-dtE">
+                                <rect key="frame" x="48" y="85" width="318" height="448"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="448" placeholder="YES" id="rt7-qx-oOA"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.45055509868421051" green="0.59341591282894501" blue="0.95145456414473684" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.98116262335526316" blue="0.9599609375" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Qv-yR-dtE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" placeholder="YES" id="1nN-em-UVl"/>
+                            <constraint firstItem="8Nu-nq-XFG" firstAttribute="baseline" secondItem="xmS-JM-d1l" secondAttribute="baseline" placeholder="YES" id="P7P-dG-Yhk"/>
+                            <constraint firstAttribute="bottom" secondItem="8Nu-nq-XFG" secondAttribute="bottom" constant="20" symbolic="YES" placeholder="YES" id="S0P-Vk-sDE"/>
+                            <constraint firstItem="8Qv-yR-dtE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" placeholder="YES" id="X4n-3M-8wB"/>
+                            <constraint firstItem="8Qv-yR-dtE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" placeholder="YES" id="b8j-J3-15t"/>
+                            <constraint firstItem="xmS-JM-d1l" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" placeholder="YES" id="m0T-2b-xt0"/>
+                            <constraint firstItem="8Nu-nq-XFG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" placeholder="YES" id="z0u-Kc-Bsc"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="buttonLeft" destination="8Nu-nq-XFG" id="kUr-e9-71N"/>
+                        <outlet property="buttonRight" destination="xmS-JM-d1l" id="9mW-eT-tG3"/>
+                        <outlet property="textV" destination="8Qv-yR-dtE" id="RdP-Ac-SOo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="374"/>
+        </scene>
+    </scenes>
+</document>
